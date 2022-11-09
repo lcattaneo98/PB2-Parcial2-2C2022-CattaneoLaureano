@@ -16,14 +16,14 @@ public class Alarma {
 	List<Sensor> sensores;
 	Boolean estado;
 
-	public Alarma(Integer id, Integer codigoDeActivacion, Integer codigoDeConfiguracion, String string,
-			Usuario usuario, Accion accion) {
+	public Alarma(Integer id, Integer codigoDeActivacion, Integer codigoDeConfiguracion, String string) {
 		this.id = id;
 		this.codigoDeActivacion = codigoDeActivacion;
 		this.codigoDeConfiguracion = codigoDeConfiguracion;
 		this.nombre = nombre;
 		this.usuariosValidos = new ArrayList<Usuario>();
-		this.usuariosValidos.add(usuario);
+		this.identificador = new ArrayList<Identificador>();
+		this.sensores = new ArrayList<Sensor>();
 	}
 
 }
